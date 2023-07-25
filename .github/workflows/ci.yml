@@ -102,12 +102,19 @@ jobs:
       matrix:
         name: [ VS2015 x86 Development, VS2015 x64 Development, VS2015 x64 Release, VS2019 x64 Development, VS2022 x64 Development ]
         include:
+         - name: VS2015 x86 Development
+            os: windows-2019
+            compiler: VS2015
+            toolset: v140
+            platform: x86
+            configuration: Development
           - name: VS2015 x64 Development
             os: windows-2019
             compiler: VS2015
             toolset: v140
             platform: x64
             configuration: Development
+
     steps:
     - uses: actions/checkout@v3
       with:
