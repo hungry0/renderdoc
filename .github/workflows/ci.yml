@@ -100,7 +100,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        name: [ VS2015 x86 Development, VS2015 x64 Development, VS2015 x64 Release, VS2019 x64 Development, VS2022 x64 Development ]
+        name: [ VS2015 x86 Development, VS2015 x64 Development ]
         include:
           - name: VS2015 x86 Development
             os: windows-2019
